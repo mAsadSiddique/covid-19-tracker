@@ -36,7 +36,7 @@ jobs:
       run: npm build
       
     - name: Surge
-      run: npm install - surge
+      run: npm install -g surge
       
     - name: Deployed on Surge
       run: sudo npx surge ./build Covid19TrackerAppProject.surge.sh --token ${{secrets.Surge_Token}}
